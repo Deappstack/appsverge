@@ -1,7 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,6 +30,9 @@ body{
     Arial,
     sans-serif;
 
+    background:#ffffff;
+    color:#111111;
+
     display:flex;
     justify-content:center;
     align-items:center;
@@ -37,26 +40,29 @@ body{
 
     padding:40px;
 
-    background:#fff;
-    color:#111;
-
 }
 
-/* Logo */
+/* ---------------- Logo ---------------- */
 
 .logo{
+
     position:fixed;
+
     top:32px;
     left:40px;
+
 }
 
 .logo img{
-    width:1600px;
+
+    width:160px;
     height:auto;
+
     object-fit:contain;
+
 }
 
-/* Main */
+/* ---------------- Main ---------------- */
 
 .container{
 
@@ -76,13 +82,15 @@ body{
 
     border-radius:999px;
 
-    font-size:12px;
+    background:#fff;
 
-    text-transform:uppercase;
+    color:#6b7280;
+
+    font-size:12px;
 
     letter-spacing:.12em;
 
-    color:#6b7280;
+    text-transform:uppercase;
 
     margin-bottom:30px;
 
@@ -122,31 +130,43 @@ body{
 
     font-size:18px;
 
-    color:#6b7280;
-
     line-height:1.8;
+
+    color:#6b7280;
 
 }
 
-/* CTA */
+/* ---------------- CTA ---------------- */
+
+.helper{
+
+    margin-top:90px;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+    color:#9ca3af;
+
+}
 
 .button{
 
     display:inline-block;
 
-    margin-top:90px;
+    background:#111111;
 
-    padding:18px 36px;
-
-    background:#111;
-
-    color:#fff;
+    color:#ffffff;
 
     text-decoration:none;
+
+    padding:18px 36px;
 
     border-radius:14px;
 
     font-weight:600;
+
+    font-size:16px;
 
     transition:.25s;
 
@@ -160,64 +180,76 @@ body{
 
 }
 
-.helper{
-
-    margin-top:18px;
-
-    font-size:15px;
-
-    color:#9ca3af;
-
-}
+/* ---------------- Animation ---------------- */
 
 @keyframes fade{
 
-from{
+    from{
 
-opacity:0;
-transform:translateY(15px);
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
 
 }
 
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
+/* ---------------- Mobile ---------------- */
 
 @media(max-width:700px){
 
+body{
+
+    padding:30px;
+
+}
+
 .logo{
 
-left:20px;
-top:20px;
+    left:20px;
+    top:20px;
 
 }
 
 .logo img{
 
-width:72px;
+    width:120px;
 
 }
 
 .domain{
 
-font-size:46px;
+    font-size:46px;
 
 }
 
 .subtitle{
 
-font-size:22px;
+    font-size:22px;
+
+}
+
+.description{
+
+    font-size:17px;
+
+}
+
+.helper{
+
+    margin-top:70px;
 
 }
 
 .button{
 
-width:100%;
+    width:100%;
 
 }
 
@@ -229,40 +261,44 @@ width:100%;
 
 <body>
 
+<!-- Logo -->
+
 <div class="logo">
-<img src="https://i.postimg.cc/63m8TwFx/Artboard-1-4x.png" alt="AppsVerge Logo">
+    <img src="https://i.postimg.cc/63m8TwFx/Artboard-1-4x.png" alt="AppsVerge Logo">
 </div>
+
+<!-- Content -->
 
 <div class="container">
 
-<div class="label">
-Premium Domain
-</div>
+    <div class="label">
+        Premium Domain
+    </div>
 
-<h1 class="domain">
-appsverge.com
-</h1>
+    <h1 class="domain">
+        appsverge.com
+    </h1>
 
-<div class="subtitle">
-A premium domain for ambitious brands.
-</div>
+    <div class="subtitle">
+        A premium domain for ambitious brands.
+    </div>
 
-<p class="description">
-A short, memorable and brandable domain ideal for modern startups,
-AI products, SaaS platforms, and digital-first companies looking to build
-a strong online identity.
-</p>
-<div class="helper">
-Interested in acquiring this domain? Get in touch.
-</div>
-    
-<a class="button" href="mailto:info@appsverge.com">
-info@appsverge.com
-</a>
+    <p class="description">
+        A short, memorable and brandable domain ideal for modern startups,
+        AI products, SaaS platforms, mobile app companies and digital-first
+        businesses looking to build a strong online identity.
+    </p>
 
+    <div class="helper">
+        Interested in acquiring this domain? Get in touch.
+    </div>
 
+    <a class="button" href="mailto:info@appsverge.com">
+        info@appsverge.com
+    </a>
 
 </div>
 
 </body>
 </html>
+```
