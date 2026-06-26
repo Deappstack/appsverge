@@ -37,123 +37,188 @@ body{
 
     padding:40px;
 
+    background:#fff;
     color:#111;
-
-    background:#ffffff;
 
 }
 
-/* logo */
+/* Logo */
+
 .logo{
     position:fixed;
-    top:22px;
-    right:22px;
+    top:32px;
+    left:40px;
 }
 
 .logo img{
-    width:52px;
-    height:52px;
+    width:90px;
+    height:auto;
     object-fit:contain;
-    border-radius:14px;
-    background:white;
-    padding:6px;
 }
 
-/* container */
+/* Main */
+
 .container{
-    max-width:780px;
+
+    max-width:760px;
+
     animation:fade .8s ease;
+
 }
 
 .label{
+
     display:inline-block;
+
     padding:8px 16px;
+
     border:1px solid #e5e7eb;
+
     border-radius:999px;
+
     font-size:12px;
-    letter-spacing:.12em;
+
     text-transform:uppercase;
+
+    letter-spacing:.12em;
+
     color:#6b7280;
+
     margin-bottom:30px;
-    background:#fff;
+
 }
 
 .domain{
+
     font-size:74px;
+
     font-weight:700;
+
     letter-spacing:-2px;
+
     line-height:1.05;
+
     margin-bottom:18px;
+
 }
 
 .subtitle{
+
     font-size:26px;
+
     font-weight:500;
+
     color:#374151;
-    margin-bottom:16px;
+
+    margin-bottom:18px;
+
 }
 
 .description{
-    font-size:18px;
-    color:#6b7280;
-    line-height:1.8;
+
     max-width:620px;
+
     margin:auto;
+
+    font-size:18px;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
 }
 
-/* CTA button (email primary) */
+/* CTA */
+
 .button{
+
     display:inline-block;
-    margin-top:46px;
+
+    margin-top:90px;
+
+    padding:18px 36px;
+
     background:#111;
+
     color:#fff;
+
     text-decoration:none;
-    padding:18px 34px;
+
     border-radius:14px;
+
     font-weight:600;
-    transition:.2s ease;
+
+    transition:.25s;
+
 }
 
 .button:hover{
+
     background:#000;
+
     transform:translateY(-2px);
+
 }
 
-/* helper text */
 .helper{
-    margin-top:14px;
-    font-size:14px;
+
+    margin-top:18px;
+
+    font-size:15px;
+
     color:#9ca3af;
+
 }
 
-/* footer */
-.footer{
-    margin-top:60px;
-    font-size:13px;
-    color:#9ca3af;
-}
-
-/* animation */
 @keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(12px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+
+from{
+
+opacity:0;
+transform:translateY(15px);
+
 }
 
-/* mobile */
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
 @media(max-width:700px){
 
+.logo{
+
+left:20px;
+top:20px;
+
+}
+
+.logo img{
+
+width:72px;
+
+}
+
 .domain{
-    font-size:46px;
+
+font-size:46px;
+
 }
 
 .subtitle{
-    font-size:22px;
+
+font-size:22px;
+
+}
+
+.button{
+
+width:100%;
+
 }
 
 }
@@ -164,9 +229,8 @@ body{
 
 <body>
 
-<!-- LOGO -->
 <div class="logo">
-    <img src="https://i.postimg.cc/63m8TwFx/Artboard-1-4x.png" alt="AppsVerge Logo">
+<img src="https://i.postimg.cc/63m8TwFx/Artboard-1-4x.png" alt="AppsVerge Logo">
 </div>
 
 <div class="container">
@@ -194,11 +258,7 @@ info@appsverge.com
 </a>
 
 <div class="helper">
-For inquiries or purchase offers, please email us directly.
-</div>
-
-<div class="footer">
-Serious inquiries only.
+Interested in acquiring this domain? Get in touch.
 </div>
 
 </div>
